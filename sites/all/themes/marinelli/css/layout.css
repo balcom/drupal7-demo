@@ -224,7 +224,7 @@ body{
 }
 
 /* Blog */
-.view-blog-posts .views-field-title a
+.view-blog-posts .views-field-title a, .view-staff .views-field-field-name
 {
   font-size:2.2em;
   text-decoration:none;
@@ -233,4 +233,11 @@ body{
 .view-blog-posts .views-field-title a:hover
 {
   text-decoration:underline;
+}
+
+.view-staff .views-field-field-pic
+{
+  float:left;
+  border:3px solid #4391c8;
+  margin:0 10px 5px 0;
 }
