@@ -235,6 +235,12 @@ body{
   text-decoration:underline;
 }
 
+.view-staff .views-row
+{
+  clear:left;
+  margin:5px 0;
+}
+
 .view-staff .views-field-title
 {
   font-weight:bold;
