@@ -244,5 +244,6 @@ body{
 .view-staff .views-field-field-pic
 {
   float:left;
+  width:110px;
   margin:0 10px 5px 0;
 }
