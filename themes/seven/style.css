@@ -381,6 +381,8 @@ ul.admin-list li {
   background: url(images/list-item.png) no-repeat 0 11px;
   list-style-type: none;
   list-style-image: none;
+  width:300px;
+  float:left;
 }
 .admin-panel .item-list ul,
 ul.admin-list {

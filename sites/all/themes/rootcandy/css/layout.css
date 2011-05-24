@@ -1,11 +1,8 @@
 /* top panel */
 #top-panel {
-  position: absolute;
+  position: relative;
   z-index: 400;
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom:-30px;
 }
 
 #top-panel-head {
@@ -100,11 +97,9 @@ h1, h2, h3, h4, h5, h6 {
 /* main content layout */
 #content-wrap {
   background: #fff;
-  min-width: 780px;
-  max-width: 1260px;
+  width: 1050px;
   margin: 0 auto 10px auto;
   clear: both;
-  width: expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "99%");
 }
 
 #content-wrap #inside {
@@ -113,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #content {
+  width:790px;
   padding-left: 10px;
   padding-top: 0px;
   background: #fff;
@@ -124,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #sidebar-left {
   width: 210px;
-  float: left;
+  float: right;
 }
 
 .sidebar-right #content {
@@ -162,4 +158,9 @@ h1, h2, h3, h4, h5, h6 {
 #legal-notice a {
   padding-right: 12px;
   background: transparent url(../misc/extlink.gif) no-repeat scroll right center;
+}
+
+dl.admin-list dt
+{
+  margin-top:10px;
 }
