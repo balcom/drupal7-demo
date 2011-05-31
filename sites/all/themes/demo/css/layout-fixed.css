@@ -1,0 +1,342 @@
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+  margin:0;
+  padding:0;
+  background:url("/sites/all/themes/demo/images/bg.jpg") repeat-x;
+  font-family:"Myraid Pro", "myriad-pro-1","myriad-pro-2",sans-serif;
+  color:#8b8b8b;
+}
+
+#page-wrapper,
+.region-bottom {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+  padding:7px 0 0 0;
+}
+
+#header .section {
+}
+
+#header a#logo
+{
+  float:left;
+  margin-right:20px;
+}
+
+#header #site-name
+{
+  margin:0;
+}
+
+#header #site-name a
+{
+  font-weight:normal;
+  color:#3f3f3f;
+  text-decoration:none;
+  display:inline-block;
+  margin:0px;
+  font-size:18px;
+  float:left;
+}
+
+#search-box {
+}
+
+.region-header {
+}
+
+.connect
+{
+  color:#807f7f;
+  font-size:14px;
+  float:right;
+}
+
+.connect p
+{
+  float:right;
+  margin:5px 10px 0 0;
+}
+
+.connect img
+{
+  float:right;
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {
+}
+
+.view-home-promos
+{
+  margin-bottom:20px;
+}
+
+/*
+ * Content
+ */
+#content
+{
+  margin:20px 20px 0 0;
+  width:630px;
+  float:left;
+}
+
+#content .section {
+  margin: 0;
+  padding: 0;
+}
+
+#block-views-blog_posts-block_1
+ {
+   width:312px;
+   margin-right:20px;
+   float:left;
+ }
+ 
+ #block-views-blog_posts-block_1 .views-row
+ {
+   padding-top:10px;
+   margin-top:10px;
+   border-top:1px solid #595959;
+ }
+ 
+ #block-views-blog_posts-block_1 .views-row:first-child
+ {
+   padding-top:0px;
+   margin-top:0px;
+   border-top:none;
+ }
+ 
+  #block-views-blog_posts-block_1 .views-field-title a
+  {
+    display:inline-block;
+    font-size:24px;
+    font-weight:normal;
+    color:#595959;
+    text-decoration:none;
+    margin-bottom:5px;
+  }
+  
+  #block-views-blog_posts-block_1 .views-field-title a:hover
+  {
+    text-decoration:underline;
+  }
+  
+  #block-views-blog_posts-block_1 .views-field-view-node a
+  {
+    color:#595959;
+  }
+
+  #block-block-3
+  {
+     width:295px;
+     float:left;
+  }
+  
+  #block-block-3 h3
+  {
+    margin:0;
+    font-weight:normal;
+    color:#595959;
+  }
+
+/*
+ * Navigation
+ */
+#navigation
+{
+  margin-bottom:10px;
+}
+ 
+#navigation .section {
+}
+
+ul#main-menu
+{
+  margin:7px 0 0 0;
+  padding:0;
+  list-style:none;
+}
+
+ul#main-menu li
+{
+  display:inline;
+  margin-right:20px;
+}
+
+ul#main-menu li a
+{
+  color:#d6d6d6;
+  font-size:18px;
+  text-decoration:none;
+}
+
+ul#main-menu li a:hover
+{
+  color:#fff;
+}
+
+#block-views-events-block_1 h2
+{
+  color:#595959;
+  font-size:30px;
+  font-weight:normal;
+  border-bottom:5px double #595959;
+  margin:0;
+  position:relative;
+  top:-6px;
+}
+
+#block-views-events-block_1 h3
+{
+  background:#f5f5f5;
+  height:50px;
+  width:50px;
+  padding:5px;
+  line-height:1.1;
+  font-size:24px;
+  text-align:center;
+  overflow:hidden;
+  display:inline-block;
+  float:left;
+  margin:0 15px 0 0;
+}
+
+#block-views-events-block_1 ul
+{
+  height:60px;
+  list-style:none;
+  padding:0;
+  width:312px;
+  margin:10px 0;
+}
+
+#block-views-events-block_1 ul li a
+{
+  color:#929292;
+}
+
+
+/*
+ * First sidebar
+ */
+ 
+ .region-sidebar-first
+ {
+   width:312px;
+   margin-left:650px;
+   padding-top:20px;
+ }
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+  padding:10px;
+  background:#f5f5f5;
+  color:#9a9a9a;
+  margin-top:20px;
+}
+
+#footer p
+{
+  margin:0;
+  text-align:right;
+}
+
+#footer .section {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-bottom {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
+
+
